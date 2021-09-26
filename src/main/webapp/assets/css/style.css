@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 sep. 2021, 22:19:33
+    Author     : Diego Rincon
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+body{
+    background-image: url("../images/BG-EasyParking.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+h1{
+    font-weight: 700;
+}
+h2{
+    font-weight: 500;
+}
+.logo{
+    width: 225px;
+}
+.wrapper{
+    background: rgb(0, 149, 219, .7);
+    padding: 25px 0;
+}
+.wrapper h1, .wrapper p{
+    color: #fff;
+}
+.link-item{
+    display: flex;
+    text-align: center;
+    background: rgba(255,255,255,0.7);
+    border-radius: 25px;
+    margin: 15px 10px;
+    box-shadow: 0 0px 25px 5px rgb(0 0 0 / 25%);
+}
+.link-item a {
+    color: #212529 ;
+    padding: 10px 0 10px 0;
+    text-decoration: none;
+}
+.link-item i{
+    font-size: 4em;
+    color: #0095db;
+}
+.link-item .title{
+    display: block;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.link-item .description {
+    text-align: center;
+    margin-top: 1rem;
+}
+/*Formulario*/
+
+.form-group{
+    padding: 0 10px; 
+}
+.form-row{
+    display: flex;
+    justify-content: center;
+}
+label{
+    color: #fff;
+    font-weight: 700;
+}
+.btn-registro{
+    background-color: #fed510;
+}
+.btn-registro:hover{
+    background-color: #0069a3;
+    color: #fff;
+}
+/*Footer*/
+footer{
+    background-color: #0095db;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0; 
+    margin-top: 20px;
+}
+footer p{
+    margin: 0;
+}
+
+/*Ajustes responsive*/
+@media (max-width: 768px) {
+    .form-row {
+        display: block;
+    }
+}
+

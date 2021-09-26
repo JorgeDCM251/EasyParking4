@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zona de registro Easy Parking - MisionTic</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" href="http://localhost:8080/EasyParkingG4/assets/images/faviconEP.ico" type="image/gif" sizes="16x16">
+        
+        <!--Carga de Bootstrap-->
+        <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        
+        <!--Carga iconos FontAwesome-->
+        <link href="assets/css/all.min.css" rel="stylesheet" type="text/css"/>
+        
+        <!--Carga de estilos-->
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+        
+        <!--Carga de fuentes a través de Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="logo pt-4 mx-auto">    
+           <a href="home.html"><img src="assets/images/Logo-Easy-Parking.jpg" alt="Logo EasyParking" class="img-fluid mb-4"></a>
+        </div>
+        
+        <div class="container mb-5">
+            <div class="wrapper w-75 mx-auto">
+                <div class="text-center">
+            
+                    <h1>Registrar ingreso</h1>
+                </div>
+                <p class="text-center font-weight-bold">Ingrese los datos solicitados a continuación:</p>
+                <form>
+                    <div class="form-row mb-4">
+                        <div class="form-group col-md-4 mb-4">
+                            <label for="inputName">Nombre:</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Nombre y apellidos ">
+                        </div>    
+                        <div class="form-group col-md-4 mb-4">
+                            <label for="inputId">Documento de identidad:</label>
+                            <input type="text" class="form-control" id="inputId" placeholder="Identificación">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row mb-4">
+                        
+                        <div class="form-group col-md-4 mb-4">
+                            <label for="inputTelefono">Teléfono:</label>
+                            <input type="tel" class="form-control" id="inpuTelefono" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group col-md-4 mb-4">
+                            <label for="inputVehiculo">Tipo de vehículo:</label>
+                            <select id="inputVehiculo" class="form-control">
+                              <option selected>Selecciona una opción...</option>
+                              <option>Automovil</option>
+                              <option>Motocicleta</option>
+                              <option>Bicicleta</option>
+                            </select>
+                        </div> 
+                    </div>
+                    
+                    <div class="form-row mb-4">           
+                        
+                        <div class="form-group col-md-4 mb-4">
+                            <label for="inputDate">Fecha:</label>
+                            <input type="date" id="inputDate" name="Fecha"
+                                   value=""
+                                   min="2021-09-23" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4 mb-4">
+                            <label for="inputEntrada">Hora de entrada:</label>
+                            <input type="time" id="inputEntrada" name="hora de entrada"
+                                   min="00:00" max="23:59" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-row mb-4 text-center">  
+                        <button type="submit" class="btn btn-registro">COMPLETAR REGISTRO</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <footer>
+            <p>MisionTic Grupo 4 - 2021</p>
+        </footer>
+    </body>
+</html>
